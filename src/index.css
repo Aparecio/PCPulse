@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* General styles */
+.pcpeak-view {
+  position: relative;
+  /* height: 100vh; Removed as it's inherited by default. */
+}
+
+.login-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 450px;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Added border-radius to match the image */
+  border-radius: 10px;
+}
+
+/* Additional styles for individual elements */
+.sign-in-panel {
+  background-color: white;
+  /* Increased transparency to match the login sidebar */
+  opacity: 0.9;
+  height: 100%;
+  padding: 20px;
+  /* Added border-radius to match the image */
+  border-radius: 10px;
+}
+
+.title {
+  /* Increased font size and weight to make more prominent */
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  /* Added text-align: center; to center the title */
+  text-align: center;
+}
+
+.description {
+  /* Increased font size to enhance readability */
+  font-size: 18px;
+  color: gray;
+  margin-bottom: 20px;
+  /* Added text-align: center; to center the description */
+  text-align: center;
+}

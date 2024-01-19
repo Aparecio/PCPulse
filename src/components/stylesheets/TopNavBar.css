@@ -1,0 +1,88 @@
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #ffffff;
+  color: #ff0000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand ~ .search-bar,
+.navbar-brand ~ .navbar-btn {
+  margin: 0 0.5rem;
+}
+
+.navbar > .search-bar {
+  margin-left: 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #ff0000;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 1rem;
+}
+
+.nav-links li a {
+  color: #ff0000;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links li a:hover {
+  background-color: #333;
+}
+
+/* Modal Header Styles */
+.modal-header {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.modal-flex-container {
+  display: flex;
+}
+
+.modal-left {
+  flex: 1;
+}
+
+.modal-right {
+  flex: 1;
+  background: linear-gradient(to right, #791369, #033894);
+}
+
+.close {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.image-logo {
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}

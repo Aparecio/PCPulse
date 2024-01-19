@@ -1,0 +1,50 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background: #791369;
+  color: #fff;
+  transition: width 0.3s ease;
+}
+
+.container.open {
+  width: 120px;
+}
+
+.toggle-btn {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item {
+  margin-bottom: 5px;
+}
+
+.nav-link {
+  padding: 10px;
+  cursor: pointer;
+  background: #2980b9;
+}
+
+.nav-link.with-submenu {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+.nav-link.with-submenu:hover .submenu {
+  display: flex;
+  flex-direction: column;
+}

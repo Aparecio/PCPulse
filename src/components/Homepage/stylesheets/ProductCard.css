@@ -1,0 +1,150 @@
+.product-card-wrapper {
+  display: flex;
+}
+
+.item {
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: 1s;
+  height: 225px;
+  width: 200px;
+  margin: 10px;
+}
+
+.item .img-box {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  transition: 1s;
+}
+
+.item .img-box img {
+  display: block;
+  margin: 0 auto 0;
+  transition: 1s;
+  width: 100%;
+}
+
+.details {
+  background: #ffffff;
+  bottom: -150px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+  padding-top: 0.25px;
+  position: absolute;
+  transition: 1s;
+  width: 100%;
+}
+
+.details h2 {
+  font-size: 16px;
+  padding-bottom: 25px;
+  width: 100%;
+}
+
+.details h2 span {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.details .price {
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  right: 25px;
+  top: 0;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+ul {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+ul.colors li {
+  border-radius: 50%;
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+}
+
+ul.colors li:hover {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+ul.colors li:nth-child(1) {
+  background: #9F8A42;
+}
+
+ul.colors li:nth-child(2) {
+  background: #ACAEA9;
+}
+
+ul.colors li:nth-child(3) {
+  background: #cd7f32;
+}
+
+ul li {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: normal;
+  list-style: none;
+  margin: 5px 5px 0;
+  transition: 0.7s;
+}
+
+ul li:first-child {
+  margin-left: 0;
+}
+
+.item .details a.main-contentBtn {
+  border: 1px solid #ff0000;
+  background: #ff0000;
+  border-radius: 5px;
+  color: #ffffff;
+  display: block;
+  margin: 0 0 10px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.item .details a.main-contentBtn:hover {
+  border-color: #ff0000;
+  background: #ffffff;
+  color: #ff0000;
+  transition: 0.5s;
+}
+
+.item:hover .details {
+  bottom: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  overflow: visible;
+  transition: 1s;
+}
+
+.item:hover .img-box {
+  position: absolute;
+  bottom: 60px;
+  transition: 3s;
+}
+
+.item:hover h2, .item:hover .price {
+  padding-bottom: 0;
+  padding-top: 20px;
+}
